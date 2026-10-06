@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'primary-fixed-dim': '#b4c5ff', 'on-secondary-container': '#00714d', 'on-background': '#131b2e', 'error': '#ba1a1a', 'surface-container': '#eaedff', 'on-tertiary-container': '#ffeedd', 'surface': '#faf8ff', 'tertiary-container': '#996100', 'tertiary-fixed-dim': '#ffb95f', 'surface-variant': '#dae2fd', 'primary-container': '#2563eb', 'inverse-surface': '#283044', 'surface-container-lowest': '#ffffff', 'primary': '#004ac6', 'secondary-fixed': '#6ffbbe', 'surface-tint': '#0053db', 'background': '#faf8ff', 'on-tertiary-fixed-variant': '#653e00', 'on-primary-container': '#eeefff', 'on-surface': '#131b2e', 'on-secondary-fixed': '#002113', 'tertiary-fixed': '#ffddb8', 'on-secondary': '#ffffff', 'surface-container-high': '#e2e7ff', 'primary-fixed': '#dbe1ff', 'on-primary': '#ffffff', 'on-secondary-fixed-variant': '#005236', 'on-tertiary': '#ffffff', 'error-container': '#ffdad6', 'on-error': '#ffffff', 'secondary-container': '#6cf8bb', 'inverse-primary': '#b4c5ff', 'secondary-fixed-dim': '#4edea3', 'surface-container-low': '#f2f3ff', 'on-primary-fixed': '#00174b', 'inverse-on-surface': '#eef0ff', 'outline-variant': '#c3c6d7', 'secondary': '#006c49', 'surface-bright': '#faf8ff', 'on-surface-variant': '#434655', 'outline': '#737686', 'on-error-container': '#93000a', 'surface-container-highest': '#dae2fd', 'tertiary': '#784b00', 'on-tertiary-fixed': '#2a1700', 'on-primary-fixed-variant': '#003ea8', 'surface-dim': '#d2d9f4' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'gutter': '0.75rem', 'space-sm': '0.5rem', 'margin': '1rem', 'space-xs': '0.25rem', 'space-xl': '2rem', 'margin-desktop': '2rem', 'space-lg': '1.5rem', 'space-md': '1rem', 'gutter-desktop': '1.25rem' }, 'fontFamily': { 'body-sm': ['Plus Jakarta Sans'], 'headline-md': ['Plus Jakarta Sans'], 'label-sm': ['Plus Jakarta Sans'], 'headline-sm': ['Plus Jakarta Sans'], 'title-md': ['Plus Jakarta Sans'], 'headline-lg': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'label-lg': ['Plus Jakarta Sans'], 'title-sm': ['Plus Jakarta Sans'], 'currency-display': ['Plus Jakarta Sans'], 'label-md': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'] }, 'fontSize': { 'body-sm': ['12px', { 'lineHeight': '18px', 'fontWeight': '400' }], 'headline-md': ['22px', { 'lineHeight': '30px', 'fontWeight': '700' }], 'label-sm': ['10px', { 'lineHeight': '14px', 'letterSpacing': '0.02em', 'fontWeight': '700' }], 'headline-sm': ['18px', { 'lineHeight': '26px', 'fontWeight': '600' }], 'title-md': ['16px', { 'lineHeight': '24px', 'fontWeight': '600' }], 'headline-lg': ['30px', { 'lineHeight': '38px', 'fontWeight': '700' }], 'body-md': ['14px', { 'lineHeight': '20px', 'fontWeight': '400' }], 'label-lg': ['14px', { 'lineHeight': '18px', 'fontWeight': '600' }], 'title-sm': ['14px', { 'lineHeight': '20px', 'fontWeight': '600' }], 'currency-display': ['20px', { 'lineHeight': '26px', 'fontWeight': '800' }], 'label-md': ['12px', { 'lineHeight': '16px', 'fontWeight': '600' }], 'body-lg': ['16px', { 'lineHeight': '24px', 'fontWeight': '400' }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Card Circle Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VbzrdULvZCUD1AxlpZt4fOHgoy0699HfVbgSjy6ZQ9fYvQgtwJzZEy9P7kFI7Gd8pQ14s4NIkWFv297nzGUUWAOdesTHz292_5BB9pNrkKw1SjXKWrwok638zXSufqCKNzzblNwERyVNuvCx-WewKrEetxYjgNIB2l6FgZCkrEjM2PxAjzdMRfl0nNlvaMobU5cXhLcJx5Zam2ceHuR1LblQAcF3Jl1lW0Kuavlh9KGSJZ0q2IYL1AcRs"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">카드서클</span><span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-space-xs py-0.5 rounded-full">초대회원 전용</span></div><span class="hidden">Chats</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a class="w-11 h-11 flex items-center justify-center" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN4eT1ymBnb17yoL7202b8MfiNRIdaNt9ej0AoCqR1NhHIt8h0CVw445lTlAGC-6k7NoouwUkOTo8QYUdz1N0ybhgjppoxYQn6-LtIhdtYJrEoqe7MzryIK94osEDPhYeTvbGSbT089CeGqgv5WZeySd6hdneSPs9REsl1mfhK3xqkB6raQPN2uThjperSaaNuw7dnkhWQ6omDTOiC0Ti8CXoiouf1HmfEougsPNGX_BOhGOr6q0NezA"/></a></div></div></header><main class="flex flex-col relative w-full pt-14 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sticky Sub-Navigation & Listing Anchor Bar -->
+<div class="sticky top-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-sm">
+<!-- Chat Partner Top Bar -->
+<div class="flex items-center justify-between px-margin py-2.5">
+<div class="flex items-center gap-space-sm">
+<a class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-variant transition-colors text-on-surface" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</a>
+<div class="flex items-center gap-2">
+<div class="relative">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-headline-sm text-headline-sm overflow-hidden">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface">홈런왕민수</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-1.5 py-0.5 rounded-full flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                매너 99점
+              </span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span>응답 보통 5분 이내</span>
+<span>·</span>
+<span class="text-secondary font-label-sm text-label-sm">온라인</span>
+</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<button class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-variant transition-colors text-on-surface-variant" id="menu-toggle-btn">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<!-- Dropdown Menu -->
+<div class="hidden absolute right-0 mt-1 w-44 rounded-xl bg-surface-container-lowest shadow-xl py-1 z-50 animate-in fade-in zoom-in-95" id="more-menu">
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">notifications_off</span>
+            알림 끄기
+          </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">block</span>
+            사용자 차단
+          </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-error hover:bg-error-container/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error">flag</span>
+            신고하기
+          </button>
+</div>
+</div>
+</div>
+<!-- Pinned Target Card Capsule -->
+<div class="px-margin pb-3 pt-1">
+<div class="bg-surface-container-low rounded-xl p-2.5 shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center gap-3">
+<div class="relative w-14 h-14 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A pristine modern baseball collectible trading card featuring Jung Hoo Lee in a San Francisco Giants jersey with chrome holographic rainbow refractor finish and crisp blue on-card ink signature, encased in a transparent PSA acrylic grading slab with high quality macro studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFhJQn8Qd-T49AnzGqD5ZMMq_1OzVukMoChCtuNJbEU6Ann5VuzYhS-RvqMjfPzgzoMO7-E_c95WxgqsTwz2DrgqS2-CuX1YO1Z6uP3xgbl3sF3JDt1rMj11OgvF58wNQSRvFqQoqJrlA2pmZ4FvSAfaRG9oa7iB7jjFRVDRlzfF_SvixuxBocUdwQ4FVvlHkrXFnDxBj-lVIsSL5raaHHe59hF7f5YpL9oM6M1dmibFg1o0V7KzM5NA"/>
+<span class="absolute bottom-0 inset-x-0 bg-primary/80 backdrop-blur-xs text-on-primary font-label-sm text-label-sm text-center py-0.2">PSA 10</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-1.5 py-0.5 rounded-full flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+                예약중
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">야구 · 2024 Topps Chrome</span>
+</div>
+<h2 class="font-title-sm text-title-sm text-on-surface truncate">2024 Topps Chrome 이정후 Refractor Auto</h2>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-currency-display text-currency-display text-primary">185,000</span>
+<span class="font-label-md text-label-md text-on-surface">원</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through ml-1">₩210,000</span>
+</div>
+</div>
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors flex-shrink-0" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<!-- Trade Status Management Controls -->
+<div class="bg-surface-container-lowest rounded-lg p-2 flex items-center justify-between gap-2 shadow-xs">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse flex-shrink-0"></span>
+<p class="font-label-sm text-label-sm text-on-surface truncate">
+<strong class="font-label-md text-label-md text-on-surface">구매자 전용 예약</strong> 진행 중
+            </p>
+</div>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md transition-all active:scale-95" id="cancel-reservation-btn">
+              예약 취소
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary transition-all active:scale-95 shadow-sm flex items-center gap-1" id="complete-trade-btn">
+<span class="material-symbols-outlined text-[14px]">handshake</span>
+              거래 완료 요청
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Chat Content Stream -->
+<div class="flex flex-col px-margin py-4 gap-4">
+<!-- Security Encrypted Notice Pill -->
+<div class="self-center flex items-center gap-1.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-3 py-1.5 rounded-full shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span>카드서클 안심 보안 대화방 · 비공개 암호화</span>
+</div>
+<!-- Official Advisory Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-3.5 shadow-sm flex gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex-1">
+<p class="font-title-sm text-title-sm text-on-surface mb-0.5">안전한 카드 직거래 수칙</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          비공개 1:1 대화방입니다. 개인정보 보호를 위해 계좌/연락처는 신중히 공유하세요. 카드의 탑로더 모서리 상태 및 홀로그램 인증 번호를 대면 시 꼼꼼히 대조해보세요.
+        </p>
+</div>
+</div>
+<!-- Timeline Date Stamp -->
+<div class="flex items-center justify-center my-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2.5 py-0.5 rounded-full">
+        오늘 (2025. 05. 14 수요일)
+      </span>
+</div>
+<!-- Message Bubble: Buyer (Outgoing) -->
+<div class="flex flex-col items-end gap-1 pl-10">
+<div class="flex items-end gap-1.5">
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-primary font-bold">읽음</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">오후 2:15</span>
+</div>
+<div class="bg-primary-container text-on-primary-container px-3.5 py-2.5 rounded-2xl rounded-tr-xs shadow-xs max-w-[270px]">
+<p class="font-body-md text-body-md break-words">
+            안녕하세요 민수님! 이정후 오토 카드 직거래 문의드립니다. 내일 저녁 7시 공덕역에서 가능하실까요?
+          </p>
+</div>
+</div>
+</div>
+<!-- Message Bubble: Seller (Incoming) -->
+<div class="flex items-start gap-2 pr-10">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-1">홈런왕민수</span>
+<div class="flex items-end gap-1.5">
+<div class="bg-surface-container-lowest text-on-surface px-3.5 py-2.5 rounded-2xl rounded-tl-xs shadow-xs max-w-[270px]">
+<p class="font-body-md text-body-md break-words">
+              네 안녕하세요! 내일 공덕역 4번 출구 쪽에서 뵙겠습니다. 카드 안전하게 하드탑로더에 담아갈게요.
+            </p>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">읽음</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">오후 2:18</span>
+</div>
+</div>
+</div>
+</div>
+<!-- System Event Milestone: Reservation Lock -->
+<div class="relative my-2">
+<div class="bg-surface-container rounded-2xl p-3.5 shadow-xs flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">bookmark_added</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-0.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">예약 확정 완료</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">오후 2:19</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            📌 판매자 <strong class="text-on-surface font-semibold">'홈런왕민수'</strong> 님이 이 문의를 <strong class="text-primary font-semibold">[예약 대상]</strong>으로 지정했습니다. 다른 회원의 신규 문의가 자동 제한됩니다.
+          </p>
+<div class="mt-2 bg-surface-container-lowest/80 rounded-lg p-2 text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">schedule</span>
+<span>약속 시간: 내일 오후 07:00 (공덕역 4번 출구)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Message Bubble: Buyer (Outgoing) -->
+<div class="flex flex-col items-end gap-1 pl-10">
+<div class="flex items-end gap-1.5">
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">오후 2:20</span>
+</div>
+<div class="bg-primary-container text-on-primary-container px-3.5 py-2.5 rounded-2xl rounded-tr-xs shadow-xs max-w-[270px]">
+<p class="font-body-md text-body-md break-words">
+            예약 감사합니다! 내일 시간 맞춰 뵙겠습니다. 🙌
+          </p>
+</div>
+</div>
+</div>
+<!-- Mutual Confirmation Status Guide Capsule -->
+<div class="bg-surface-container-low rounded-xl p-3 flex items-start gap-2.5 shadow-xs">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">info</span>
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface font-semibold">거래 완료 안내</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          현장에서 물품 수령 및 상태 확인 후 판매자가 [거래 완료 요청]을 누르면, 구매자의 최종 승인으로 안전하게 거래가 종결됩니다.
+        </p>
+</div>
+</div>
+</div>
+<!-- Bottom Message Input Dock -->
+<div class="sticky bottom-16 inset-x-0 z-30 bg-surface-container-lowest/90 backdrop-blur-xl shadow-lg pb-1">
+<!-- Live Sync & Safety Microbar -->
+<div class="px-margin py-1.5 bg-surface-container-high/60 flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span>15초 주기 자동 갱신 중</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">gavel</span>
+<span>카드서클 거래 규정 준수</span>
+</div>
+</div>
+<!-- Input Composer Bar -->
+<div class="px-margin py-2.5 flex items-end gap-2">
+<!-- Media/Photo Attachment Button -->
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors flex-shrink-0" title="카드 실물 사진 첨부">
+<span class="material-symbols-outlined text-[20px]">add_photo_alternate</span>
+</button>
+<!-- Message Text Area Container -->
+<div class="flex-1 bg-surface-container rounded-2xl px-3.5 py-2 flex items-center gap-2 focus-within:bg-surface-container-lowest focus-within:shadow-md transition-all">
+<textarea class="w-full bg-transparent border-0 focus:outline-none resize-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant max-h-24 leading-5" id="chat-input" placeholder="메시지를 입력하세요 (1~2000자)..." rows="1"></textarea>
+</div>
+<!-- Quick Template Emoticon Button -->
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors flex-shrink-0" title="빠른 문구">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+<!-- Send Trigger Button -->
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md shadow-primary/20 hover:bg-primary-container active:scale-95 transition-all flex-shrink-0" id="send-btn">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+<!-- Mutual Trade Complete Modal Sheet (Hidden by default) -->
+<div class="hidden fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4 animate-in fade-in" id="trade-modal">
+<div class="w-full max-w-sm bg-surface-container-lowest rounded-3xl p-5 shadow-2xl flex flex-col gap-4 animate-in slide-in-from-bottom-6">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">handshake</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="close-modal-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">거래 완료 요청</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          카드 실물 인도와 대금 수령이 모두 완료되었나요? 구매자에게 최종 확인 요청 알림이 전송됩니다.
+        </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span>거래 카드</span>
+<span class="text-on-surface font-label-md text-label-md">2024 Topps Chrome 이정후</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span>최종 정산액</span>
+<span class="text-primary font-currency-display text-currency-display">₩185,000</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 py-3 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-colors" id="modal-cancel-btn">
+          돌아가기
+        </button>
+<button class="flex-1 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all active:scale-98" id="modal-confirm-btn">
+          요청 전송
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Chat Room Micro-Interactions
+  (function() {
+    const menuBtn = document.getElementById('menu-toggle-btn');
+    const moreMenu = document.getElementById('more-menu');
+    const tradeModal = document.getElementById('trade-modal');
+    const completeTradeBtn = document.getElementById('complete-trade-btn');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const modalCancelBtn = document.getElementById('modal-cancel-btn');
+    const modalConfirmBtn = document.getElementById('modal-confirm-btn');
+    const cancelReservationBtn = document.getElementById('cancel-reservation-btn');
+    const chatInput = document.getElementById('chat-input');
+    const sendBtn = document.getElementById('send-btn');
+
+    // Toggle More Actions Menu
+    if (menuBtn && moreMenu) {
+      menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        moreMenu.classList.toggle('hidden');
+      });
+      document.addEventListener('click', () => {
+        if (!moreMenu.classList.contains('hidden')) {
+          moreMenu.classList.add('hidden');
+        }
+      });
+    }
+
+    // Modal Triggers
+    const openModal = () => tradeModal && tradeModal.classList.remove('hidden');
+    const closeModal = () => tradeModal && tradeModal.classList.add('hidden');
+
+    if (completeTradeBtn) completeTradeBtn.addEventListener('click', openModal);
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+    if (modalCancelBtn) modalCancelBtn.addEventListener('click', closeModal);
+
+    if (modalConfirmBtn) {
+      modalConfirmBtn.addEventListener('click', () => {
+        modalConfirmBtn.textContent = '요청 완료됨';
+        modalConfirmBtn.disabled = true;
+        setTimeout(() => {
+          closeModal();
+          alert('구매자에게 거래 완료 확인 요청을 전달했습니다.');
+        }, 400);
+      });
+    }
+
+    if (cancelReservationBtn) {
+      cancelReservationBtn.addEventListener('click', () => {
+        if (confirm('예약을 취소하시겠습니까? 매물이 다시 [판매중] 상태로 전환됩니다.')) {
+          alert('예약이 정상적으로 취소되었습니다.');
+        }
+      });
+    }
+
+    // Textarea Auto-expand
+    if (chatInput) {
+      chatInput.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+      });
+    }
+
+    // Send Button Feedback
+    if (sendBtn && chatInput) {
+      sendBtn.addEventListener('click', () => {
+        const text = chatInput.value.trim();
+        if (text) {
+          chatInput.value = '';
+          chatInput.style.height = 'auto';
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs relative"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[24px]">style</span><span class="font-label-md text-label-md">둘러보기</span></a><div class="flex items-center justify-center -mt-5 min-w-[56px] min-h-[44px]"><a class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg shadow-primary-container/30 transition-transform active:scale-95" data-path="new-listing" href="#"><span class="material-symbols-outlined text-[28px]">add</span></a></div><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] transition-colors relative text-primary" data-path="chats" href="#"><div class="relative"><span class="material-symbols-outlined text-[24px]">chat_bubble</span><span class="absolute -top-1 -right-2 bg-error text-on-error font-label-sm text-label-sm w-4 h-4 rounded-full flex items-center justify-center ring-2 ring-surface-container-lowest">3</span></div><span class="font-label-md text-label-md">문의함</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-md text-label-md">내 정보</span></a></div></nav></body></html>
