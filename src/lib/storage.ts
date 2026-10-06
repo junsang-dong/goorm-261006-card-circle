@@ -9,7 +9,7 @@ export function loadState(): AppState {
     const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return createSeed()
     const parsed = JSON.parse(raw) as AppState
-    if (parsed.schemaVersion !== 1 || !Array.isArray(parsed.listings) || parsed.listings.length === 0) {
+    if (parsed.schemaVersion !== 2 || !Array.isArray(parsed.listings) || parsed.listings.length === 0) {
       return createSeed()
     }
     return parsed

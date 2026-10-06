@@ -487,6 +487,28 @@ const drafts: Draft[] = [
   },
 ]
 
+const frontPhoto: Record<string, string> = {
+  'listing-01': '/cards/card-baseball-batter.jpg',
+  'listing-02': '/cards/card-baseball-pitcher.jpg',
+  'listing-03': '/cards/card-baseball-batter.jpg',
+  'listing-04': '/cards/card-baseball-batter.jpg',
+  'listing-05': '/cards/card-baseball-pitcher.jpg',
+  'listing-06': '/cards/card-baseball-pitcher.jpg',
+  'listing-07': '/cards/card-baseball-catcher.jpg',
+  'listing-08': '/cards/card-baseball-catcher.jpg',
+  'listing-09': '/cards/card-basketball-forward.jpg',
+  'listing-10': '/cards/card-basketball-guard.jpg',
+  'listing-11': '/cards/card-basketball-guard.jpg',
+  'listing-12': '/cards/card-basketball-forward.jpg',
+  'listing-13': '/cards/card-basketball-guard.jpg',
+  'listing-14': '/cards/card-basketball-forward.jpg',
+  'listing-15': '/cards/card-soccer-forward.jpg',
+  'listing-16': '/cards/card-soccer-forward.jpg',
+  'listing-17': '/cards/card-soccer-forward.jpg',
+  'listing-18': '/cards/card-soccer-midfielder.jpg',
+  'listing-19': '/cards/card-golf-swing.jpg',
+}
+
 function toListing(draft: Draft): Listing {
   const createdAt = at(draft.day, draft.hour)
   return {
@@ -513,7 +535,7 @@ function toListing(draft: Draft): Listing {
     meetupArea: draft.meetupArea ?? null,
     shippingFee: draft.shippingFee,
     images: [
-      placeholderImage(draft.sport, draft.player, '앞면'),
+      frontPhoto[draft.id] ?? placeholderImage(draft.sport, draft.player, '앞면'),
       placeholderImage(draft.sport, draft.player, '뒷면'),
     ],
     status: draft.status ?? 'available',
@@ -653,7 +675,7 @@ export function createSeed(): AppState {
     { userId: 'user-court', listingId: 'listing-01', createdAt: at(6, 12, 0) },
   ]
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     currentUserId: 'user-minsu',
     users: demoUsers,
     listings,

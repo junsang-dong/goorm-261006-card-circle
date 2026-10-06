@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useMemo, useRef, useState, type R
 import type { AppState } from '../types'
 import { reduce, type Action } from './domain'
 import { createSeed } from './seed'
-import { loadState, saveState } from './storage'
+import { STORAGE_KEY, loadState, saveState } from './storage'
 
 type StoreValue = {
   state: AppState
@@ -30,10 +30,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const onStorage = (event: StorageEvent) => {
-      if (event.key !== 'card-circle-demo-v1' || !event.newValue) return
+      if (event.key !== STORAGE_KEY || !event.newValue) return
       try {
         const parsed = JSON.parse(event.newValue) as AppState
-        if (parsed.schemaVersion === 1) {
+        if (parsed.schemaVersion === 2) {
           stateRef.current = parsed
           setState(parsed)
         }

@@ -123,7 +123,7 @@ export type Report = {
 }
 
 export type AppState = {
-  schemaVersion: 1
+  schemaVersion: 2
   currentUserId: string
   users: User[]
   listings: Listing[]
